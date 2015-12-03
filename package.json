@@ -9,7 +9,8 @@
     "cover": "babel-node ./node_modules/.bin/babel-istanbul cover test/index.js | tap-spec",
     "lint": "eslint src test",
     "prepublish": "npm run lint && npm test && npm run clean && npm run build",
-    "test": "babel-node test/index.js | tap-spec"
+    "test": "babel-node test/index.js | tap-spec",
+    "postinstall": "npm run build"
   },
   "repository": "agraboso/redux-api-middleware",
   "homepage": "https://github.com/agraboso/redux-api-middleware",
@@ -26,12 +27,12 @@
   },
   "license": "MIT",
   "dependencies": {
+    "babel": "^5.8.23",
     "babel-runtime": "^5.8.25",
     "isomorphic-fetch": "^2.1.1",
     "lodash.isplainobject": "^3.2.0"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
     "babel-eslint": "^4.1.3",
     "babel-istanbul": "^0.3.20",
     "coveralls": "^2.11.4",
