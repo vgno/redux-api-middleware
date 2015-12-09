@@ -5,6 +5,11 @@ redux-api-middleware
 
 [Redux middleware](http://rackt.github.io/redux/docs/advanced/Middleware.html) for calling an API.
 
+## Install (temporary) fork if using [redux-fetcher](https://github.com/vgno/redux-fetcher)
+```
+npm install --save vgno/redux-api-middleware#v1.0.0-beta4
+```
+
 ## Table of contents
 
 1. [Introduction](#introduction)
