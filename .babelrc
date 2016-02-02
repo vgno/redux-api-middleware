@@ -3,5 +3,6 @@
   "loose": "all",
   "optional": [
     "runtime"
-  ]
+  ],
+  "breakConfig": true
 }
